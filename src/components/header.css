@@ -1,0 +1,30 @@
+.searchButton {
+    width: 95px;
+    height: 30px;
+    letter-spacing: 2px;
+    background-color: navy;
+    color: lightblue;
+    border: solid lightblue;
+}
+.searchInput {
+margin-left: 300px;
+
+}
+
+.home{
+    color: black;
+    background-color:red;
+}
+.user {
+    color: red;
+}
+
+.title {
+
+    background-color: navy;
+    color: lightblue;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-size: 10px;
+}
+
