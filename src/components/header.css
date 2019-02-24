@@ -1,3 +1,12 @@
+.header{
+    background-color: navy;
+}
+
+.mainTitle{
+color: lightblue;
+background-color: navy;
+}
+
 .searchButton {
     width: 95px;
     height: 30px;

@@ -4,8 +4,9 @@ import './header.css'
 const Navbar = props => {
     return(
         <>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Pursuit Tube</a>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a className='mainTitle' class="navbar-brand" href="#">Pursuit Tube</a>
   <a className="home" class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
   <a className='user' class="nav-item nav-link" href="#">User</a>
   <a className='feedEdit' class="nav-item nav-link" href="#">Feed Editor</a>
@@ -18,6 +19,7 @@ const Navbar = props => {
     </div>
   </div>
 </nav>
+
         </>
     )
 }
