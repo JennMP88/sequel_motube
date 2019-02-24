@@ -9,9 +9,9 @@ class App extends Component {
     return (
       <HashRouter>
       <>
-        <Route path='/aboutus' component={Aboutus} />
+        {/* <Route path='/aboutus' component={Aboutus} />
         <Route path='/' exact component={Home} />
-        
+         */}
        
       </>
     </HashRouter>
