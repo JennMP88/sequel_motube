@@ -2,6 +2,9 @@ import React from 'react';
 
 
 class Home extends React.component{
+    constructor(){
+        super()
+    }
     render(){
         return(
             <>
