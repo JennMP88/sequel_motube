@@ -5,6 +5,7 @@ import moment from 'moment';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import Home from './components/home';
 import User from './components/user';
+import
 
 
 
@@ -24,6 +25,7 @@ class App extends Component {
           <Navbar />
           <Route path='/' exact component={Home} />
           <Route path='/user' component={User} />
+          <Route path='/user' component={} />Feededitor
         </>
       </BrowserRouter>
 
