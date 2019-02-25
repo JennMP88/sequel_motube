@@ -1,10 +1,5 @@
 import React, { Component } from 'react'
-
-// import axios from 'axios';
-// import moment from 'moment';
-// import { BrowserRouter, Route, Link } from 'react-router-dom'
 import Navbar from './components/header';
-
 import axios from 'axios';
 import moment from 'moment';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
@@ -23,20 +18,14 @@ class App extends Component {
   render() {
     return (
 
-      <>
       
-      <Navbar />
-      {/* <SearchBar/> */}
-      </>
-
       <BrowserRouter>
-      <>
-        <Route path='/' exact component={Home} />
-        <Route path='/user' component={User} />
-        
-       
-      </>
-    </BrowserRouter>
+        <>
+          <Navbar />
+          <Route path='/' exact component={Home} />
+          <Route path='/user' component={User} />
+        </>
+      </BrowserRouter>
 
     );
   }

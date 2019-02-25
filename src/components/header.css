@@ -1,4 +1,4 @@
-.header{
+.headercolor{
     background-color: navy;
 }
 
@@ -22,7 +22,6 @@ margin-left: 300px;
 
 .home{
     color: black;
-    background-color:red;
 }
 .user {
     color: red;
