@@ -1,5 +1,11 @@
-.headercolor{
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+
+.Navbar{
     background-color: rgb(61, 61, 69);
+    
 }
 
 /* .mainTitle{
@@ -9,14 +15,15 @@ background-color: navy;
 
 .searchButton {
     width: 95px;
+    margin: 5px;
     background-color:rgb(61, 61, 69);
     color: blue;
     border: solid blue; 
 }
 
 .box{
-    width: 50%;
-    text-align:center;
+    width: 100px; 
+
 }
 
 .home{

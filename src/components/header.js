@@ -5,7 +5,8 @@ import './header.css'
 const Navbar = props => {
   return (
     <>
-      <div className='headercolor'>
+      <div class="flex-container">
+      <div className='Navbar'>
         <nav class="navbar navbar-expand-lg ">
         <img width = '30'  src= { require('../assets/image.jpeg')} />
 
@@ -23,10 +24,11 @@ const Navbar = props => {
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
             <div class="navbar-nav">
-
+         
             </div>
           </div>
         </nav>
+        </div>
       </div>
     </>
   )
