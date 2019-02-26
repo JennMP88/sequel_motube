@@ -7,17 +7,20 @@
 
 .navbar{
     background-color: rgb(61, 61, 69);
-    display: inline;
+    width: 100%; 
+    height: 50px;
 }
 
 .navbar a {
     color: white;
-   
+    text-align: left;
+    width: 50%;
 }
 
 .Pursuit{
     color: blue;
-   
+    text-align: center;
+    width: 20%;
 }
 
 .searchButton {
@@ -26,18 +29,17 @@
     background-color:rgb(61, 61, 69);
     color: blue;
     border: solid blue; 
+    box-sizing: border-box;  
 }
 
 .navbar a:hover {
     background-color: #ddd;
     color: black;
-
   }
 
 .box{
     width: 100px; 
     box-sizing: border-box;
-   
 }
 
 
