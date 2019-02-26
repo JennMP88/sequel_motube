@@ -1,3 +1,7 @@
-.home{
-   flex-wrap: flex;    
+.home{ 
+    flex-wrap: flex;
+      color: red;
+      background-color: rgba(157,52,99,0.7);
+      width: 50%; 
+      text-align: center;
 }
