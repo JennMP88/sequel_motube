@@ -1,6 +1,6 @@
 .headercolor{
    
-    background-color: navy;
+    background-color: rgb(61, 61, 69);
 }
 
 /* .mainTitle{
@@ -12,12 +12,12 @@ background-color: navy;
     width: 95px;
     height: 30px;
     letter-spacing: 2px;
-    background-color: navy;
-    color: lightblue;
-    border: solid lightblue;
+    background-color:rgb(61, 61, 69);
+    color: blue;
+    border: solid blue;
 }
 .searchInput {
-margin-left: 300px;
+margin-right: 750px;
 
 }
 
