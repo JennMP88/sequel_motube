@@ -1,7 +1,9 @@
 .home{ 
-    flex-wrap: flex;
-      color: red;
-      background-color: rgba(157,52,99,0.7);
-      width: 50%; 
-      text-align: center;
+    position: relative;
+    padding:0 !important;
+    margin-top:50px !important;
+    background: #eee;
+    margin-top: 23px;
+    text-align:center;
+    margin-bottom: 0 !important;
 }
