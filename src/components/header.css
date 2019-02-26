@@ -9,31 +9,24 @@ background-color: navy;
 
 .searchButton {
     width: 95px;
-    height: 30px;
-    letter-spacing: 2px;
     background-color:rgb(61, 61, 69);
     color: blue;
     border: solid blue;
-}
-.searchInput {
-margin: right;
-display: block;
+   
+    
 }
 
+.searchInput{
+    width: 10%;
+  
+}
 
 .home{
     color: black;
 }
+
 .user {
-    color: red;
+    color:white;
 }
 
-.title {
-
-    background-color: navy;
-    color: lightblue;
-    letter-spacing: 5px;
-    font-weight: 700;
-    font-size: 10px;
-}
 

@@ -19,8 +19,7 @@ class Home extends React.Component {
                        <div class="container-fluid"> 
                        <h2 class="display-4">Feed List</h2>
                        <div class="row-fluid">
-                       
-                       
+
                         <div class="span2">
                             {/* <!--Sidebar content--> */}
                             </div>
