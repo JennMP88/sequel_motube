@@ -12,11 +12,16 @@ const Navbar = props => {
           <nav class="navbar navbar-expand-lg ">
             <img width='20' src={require('../assets/image.jpeg')} />
 
+            <div class="Pursuit">
+            <ol> <a>Pursuit Tube</a> </ol>
+            </div>
+
             <div class="navbar">
-              <a href="#"> Pursuit Tube</a>
-              <a href="#"> Home </a>
-              <a href="#"> User </a>
-              <a href="#"> Feed Editor </a>
+            <ol> <a href="/Home/default.asp" target="">Home</a> </ol>
+
+            <ol><a href="/User/default.asp" target="">User</a></ol>
+
+            <ol><a href="//default.asp" target= "''">Feed Editor</a></ol>
             </div>
 
             <input class="box" type="search" id="search" placeholder="Search" />

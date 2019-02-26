@@ -15,11 +15,16 @@ class Home extends React.Component {
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="side">
+                 <div class="container">
+                     <div class="row">
+                    <div class="col-sm">
+                        <div class="side">
                         <h2>Feed list</h2>
-                        </div>
                     </div>
+                    </div>
+                    </div>
+                    </div>
+                      
 
                       <div class="main">
                      <h2>TITLE HEADING</h2>

@@ -1,12 +1,7 @@
-/* .home{ 
-    position: relative;
-    padding:0 !important;
-    margin: auto;
-    width: 100%;
+.side{ 
     background: #eee;
-    margin-top: 23px;
-    text-align:left;
-} */
+
+}
 
 .Jumbo{
     width: 75%;
@@ -19,11 +14,11 @@
     width: 100%;
 }
 
-.side {
+/* .side {
     flex: 30%;
     background-color: #f1f1f1;
     padding: 20px;
-  }
+  } */
 
 .main {
     flex: 70%;
