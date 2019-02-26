@@ -9,11 +9,15 @@ class Home extends React.Component {
     render() {
         return (
             <>
+
                 <div className='Jumbo'>
                     <div class="jumbotron jumbotron-fluid">
                         <h1 class="display-4">User Playlist</h1>
                     </div>
                 </div>
+
+     
+
 
                  <div class="container">
                      <div class="row">
