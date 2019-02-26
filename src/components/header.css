@@ -1,5 +1,4 @@
 .headercolor{
-   
     background-color: rgb(61, 61, 69);
 }
 
@@ -17,9 +16,10 @@ background-color: navy;
     border: solid blue;
 }
 .searchInput {
-margin-right: 750px;
-
+margin: right;
+display: block;
 }
+
 
 .home{
     color: black;
