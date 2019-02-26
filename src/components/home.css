@@ -2,7 +2,7 @@
     position: relative;
     padding:0 !important;
     margin: auto;
-    width: 75%;
+    width: 100%;
     background: #eee;
     margin-top: 23px;
     text-align:left;
@@ -11,4 +11,10 @@
 
 .Jumbo{
     width: 75%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.container-fluid{
+    width: 100%;
 }
