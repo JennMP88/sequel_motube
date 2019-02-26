@@ -14,7 +14,8 @@ const Navbar = props => {
 
             <div class="navbar">
               <a href="#"> Pursuit Tube</a>
-              <a href="#"> User</a>
+              <a href="#"> Home </a>
+              <a href="#"> User </a>
               <a href="#"> Feed Editor </a>
             </div>
 

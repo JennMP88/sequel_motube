@@ -15,25 +15,18 @@ class Home extends React.Component {
                     </div>
                 </div>
 
-                <body>
-                       <div class="container-fluid"> 
-                       <h2 class="display-4">Feed List</h2>
-                       <div class="row-fluid">
-
-
-                        <div class="span2">
-                            {/* <!--Sidebar content--> */}
-                            </div>
-                           <div class="span10">
-                          
-                            {/* <!--Body content--> */}
-                            </div>
+                <div class="row">
+                    <div class="side">
+                        <h2>Feed list</h2>
+                        </div>
                     </div>
-                </div>
-         </body>
-            </>
-        )
-    }
 
-}
+                      <div class="main">
+                     <h2>TITLE HEADING</h2>
+                     </div>
+            </>
+                    )
+                }
+            
+            }
 export default Home;
