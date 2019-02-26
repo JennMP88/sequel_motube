@@ -1,38 +1,45 @@
-.headercolor{
-    background-color: navy;
+.flex-container{
+   padding: px;
+  text-align: center;
+  background: white;
+  color: white;
 }
 
-/* .mainTitle{
-color: lightblue;
-background-color: navy;
-} */
+.navbar{
+    background-color: rgb(61, 61, 69);
+    width: 100%; 
+    height: 50px;
+}
+
+.navbar a {
+    color: white;
+    text-align: left;
+    width: 50%;
+}
+
+.Pursuit{
+    color: blue;
+    text-align: center;
+    width: 20%;
+}
 
 .searchButton {
     width: 95px;
-    height: 30px;
-    letter-spacing: 2px;
-    background-color: navy;
-    color: lightblue;
-    border: solid lightblue;
-}
-.searchInput {
-margin-left: 300px;
-
+    margin: 5px;
+    background-color:rgb(61, 61, 69);
+    color: blue;
+    border: solid blue; 
+    box-sizing: border-box;  
 }
 
-.home{
+.navbar a:hover {
+    background-color: #ddd;
     color: black;
-}
-.user {
-    color: red;
+  }
+
+.box{
+    width: 100px; 
+    box-sizing: border-box;
 }
 
-.title {
-
-    background-color: navy;
-    color: lightblue;
-    letter-spacing: 5px;
-    font-weight: 700;
-    font-size: 10px;
-}
 
