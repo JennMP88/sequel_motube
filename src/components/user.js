@@ -19,10 +19,22 @@ class User extends React.Component {
     }
 
     addNewUser=(e)=>{
-      console.log('its clicked')
-      this.state.users.push(this.state.input)
-      this.setState({users:this.state.users})
+        console.log('keystroke',e)
+        e.preventDefault();
+      if(this.state.users.includes(this.state.input)){
+          return alert(`Username Unavailable ${this.state.input}`)   
+      }
+        //   let newUser = this.state.users.push(this.state.input)
+
+        let copiedUsers = [...this.state.users]
+
+        copiedUsers.push(this.state.input)
+
+        
+        this.setState({users: copiedUsers})
+     
     }
+
 
 
     render() {
@@ -38,7 +50,7 @@ class User extends React.Component {
                         <ul class="list-group">
                             {
                                 this.state.users.map((name, i) => {
-                                    return <li className="list-group-item">{name} </li>;
+                                    return <li key={i} className="list-group-item">{name} </li>;
                                 })
                             }
 
