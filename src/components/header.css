@@ -11,14 +11,12 @@ background-color: navy;
     width: 95px;
     background-color:rgb(61, 61, 69);
     color: blue;
-    border: solid blue;
-   
-    
+    border: solid blue; 
 }
 
-.searchInput{
-    width: 10%;
-  
+.box{
+    width: 50%;
+    text-align:center;
 }
 
 .home{
