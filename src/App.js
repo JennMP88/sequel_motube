@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 import Navbar from './components/header';
 import axios from 'axios';
 import moment from 'moment';
-import { BrowserRouter, Route, Link } from 'react-router-dom'
+import { HashRouter, Route, Link } from 'react-router-dom'
 import Home from './components/home';
 import User from './components/user';
+import FeedEditor from './components/feededitor';
 
 
 
@@ -19,13 +20,14 @@ class App extends Component {
     return (
 
       
-      <BrowserRouter>
+      <HashRouter>
         <>
           <Navbar />
           <Route path='/' exact component={Home} />
           <Route path='/user' component={User} />
+          <Route path='/feededitor' component={FeedEditor} />
         </>
-      </BrowserRouter>
+      </HashRouter>
 
     );
   }
