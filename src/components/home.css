@@ -1,9 +1,10 @@
 .home{ 
     position: relative;
     padding:0 !important;
-    margin-top:50px !important;
+    margin: auto;
+    width: 75%;
     background: #eee;
     margin-top: 23px;
-    text-align:center;
+    text-align:left;
     margin-bottom: 0 !important;
 }
