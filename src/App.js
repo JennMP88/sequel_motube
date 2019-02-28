@@ -26,6 +26,7 @@ class App extends Component {
           <Route path='/' exact component={Home} />
           <Route path='/user' component={User} />
           <Route path='/feededitor' component={FeedEditor} />
+          <Route path='video' component={Vide}
         </>
       </HashRouter>
 

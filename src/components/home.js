@@ -20,6 +20,7 @@ class Home extends React.Component {
 
 
                  <div class="container">
+                 <div class="dropdown-menu"></div>
                      <div class="row">
                     <div class="col-sm">
                         <div class="side">
@@ -31,7 +32,11 @@ class Home extends React.Component {
                       
 
                       <div class="main">
-                     <h2>TITLE HEADING</h2>
+                      <div class="row">
+                     <h2>Espn First Take</h2>
+                     <div class="col-sm">
+                     </div>
+                     </div>
                      </div>
             </>
                     )

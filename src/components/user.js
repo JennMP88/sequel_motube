@@ -7,7 +7,7 @@ class User extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            users: ['ivy', 'steve', 'jen', 'serge'],
+            users: ['Defualt','ivy', 'steve', 'jen', 'serge'],
             input: '',
 
         }
