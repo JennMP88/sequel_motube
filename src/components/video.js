@@ -20,11 +20,9 @@ class Video extends React.Component {
                    
                   
                     <span class="container">
-                        <span class="dropdown-menu"> 
 
                                     <h2>Espn First Take</h2>
 
-                         </span>
                     </span>
              
 

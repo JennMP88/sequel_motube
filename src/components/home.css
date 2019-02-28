@@ -16,7 +16,14 @@
     align-self: center;
     margin: auto;
     margin-top: 15px;
-    transition: all 8s ease-in-out;
+    transition: all 8s;
+}
+
+.h1{
+    text-align: left;
+    transition: all 8s;
+    align-self: left;
+
 }
 /* 
 .Jumbo{
