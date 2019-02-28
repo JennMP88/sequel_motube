@@ -19,11 +19,15 @@ class Home extends React.Component {
 
 
                 <div class="container">
+
                     <div class="dropdown-menu"> <h2> '' </h2></div>
+
                     <div class="row">
+
                         <div class="col-sm">
+                        
                             <div class="side">
-                                <h2>Feed list</h2>
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  Feed List</button>
                             </div>
                         </div>
                     </div>

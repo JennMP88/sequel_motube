@@ -3,26 +3,28 @@
 
 }
 .jumbotron jumbotron-fluid{
-    background-color: solid red;
+    background-color: solid black;
     padding: 20px;
 }
 
 
 .display-4{
     margin-bottom: 5%;
-    background-color: white;
-    width: 100%; 
+    background-color: grey;
+    width: 70%; 
     height: 150px;
+    align-self: center;
+    margin: auto;
+    margin-top: 15px;
 }
-
+/* 
 .Jumbo{
     width: 75%;
-    background-color: white;
     margin: auto;
     margin-top: 15px;
     box-shadow: 5px 5px 1px rgba(198, 51, 6, 0.653);
     transition: all 8s ease-in-out;
-}
+} */
 
 .container-fluid{
     width: 100%;
