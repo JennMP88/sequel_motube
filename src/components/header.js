@@ -18,11 +18,11 @@ const Navbar = props => {
             </div>
 
             <div class="navbar ">
-              <a href="/Home/default.asp" target="">Home</a>
+              <Link to='/'>Home</Link>
 
               <Link to='/user'>User</Link>
 
-              <a href="//default.asp" target="''">Feed Editor</a>
+              <Link to='/feededitor'>Feed Editor</Link>
             </div>
             <input class="box" type="search" id="search" placeholder="Search" />
 
