@@ -12,26 +12,21 @@ class Video extends React.Component {
     render() {
         return (
             <>
-                <div class="main" >
-                    <div class="row" >
-                        <h2>Espn First Take</h2>
-                        <div class="col-sm" >
-                        </div>
-                    </div>
-                </div>
+                <span className="main" >
                    
-                   <div>
-                    <div class="container">
-                        <div class="dropdown-menu"> <h2> '' </h2></div>
-                        <div class="row">
-                            <div class="col-sm">
-                                <div class="side">
-                                    <h2>Feed list</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <h2>Feed List</h2>
+                      
+                    </span>
+                   
+                  
+                    <span class="container">
+                        <span class="dropdown-menu"> 
+
+                                    <h2>Espn First Take</h2>
+
+                         </span>
+                    </span>
+             
 
 
 

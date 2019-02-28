@@ -10,11 +10,10 @@ class Home extends React.Component {
         return (
             <>
 
-                <div className='Jumbo'>
-              
+                <span className='Jumbo'>
+
                     <h1 class="display-4">User Playlist</h1>
-                  
-                </div>
+                </span>
 
 
 
@@ -25,29 +24,49 @@ class Home extends React.Component {
                     <div class="row">
 
                         <div class="col-sm">
-                        
-                            <div class="side">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  Feed List</button>
-                            </div>
+
+                            <span>
+                                <div class="side">
+
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Espn First Take</button>
+
+                                </div>
+
+                            </span>
+
                         </div>
                     </div>
                 </div>
 
                 <div class="main">
-                    <div class="row">
-                        <h2>Espn First Take</h2>
-                        <div class="col-sm">
+
+                    <h2>Feed List</h2>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Espn First Take</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Drake</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Coldfusion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Clear History</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="text-center">
+
+                        <div class="spinner-border" role="status">
 
 
-                        <div class="text-center">
-                    <div class="spinner-border" role="status">
-                        <span class="sr-only">Loading...</span>
-                    </div>
-                </div>
-
+                            <span class="sr-only">Loading...</span>
 
                         </div>
+
                     </div>
+
                 </div>
 
 

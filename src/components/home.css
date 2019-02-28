@@ -16,6 +16,7 @@
     align-self: center;
     margin: auto;
     margin-top: 15px;
+    transition: all 8s ease-in-out;
 }
 /* 
 .Jumbo{
@@ -26,9 +27,9 @@
     transition: all 8s ease-in-out;
 } */
 
-.container-fluid{
+/* .container-fluid{
     width: 100%;
-}
+} */
 
 /* .side {
     flex: 30%;
@@ -36,13 +37,8 @@
     padding: 20px;
   } */
 
-.main {
+/* .main {
     flex: 70%;
     background-color: white;
     padding: 20px;
-}
-
-.User{
-    background: white;
-    transition: all 8s ease-in-out;
-}
+} */
