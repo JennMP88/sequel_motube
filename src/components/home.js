@@ -11,9 +11,9 @@ class Home extends React.Component {
             <>
 
                 <div className='Jumbo'>
-                    <div class="jumbotron jumbotron-fluid">
-                        <h1 class="display-4">User Playlist</h1>
-                    </div>
+              
+                    <h1 class="display-4">User Playlist</h1>
+                  
                 </div>
 
 
