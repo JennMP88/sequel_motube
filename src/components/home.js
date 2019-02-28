@@ -15,7 +15,7 @@ class Home extends React.Component {
                     <h1 class="display-4">User Playlist</h1>
                 </span>
                             
-                            <h1 className= "h1">
+                         <h1 className= "h1">
                             <a>First Take </a>
                             </h1>
 
@@ -24,7 +24,7 @@ class Home extends React.Component {
 
                 <div class="main">
 
-                    <h2>Feed List</h2>
+                    <h2 className="" >FeedList</h2>
                     
                     <ul class="nav flex-column">
 

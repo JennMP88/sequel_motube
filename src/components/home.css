@@ -20,11 +20,15 @@
 }
 
 .h1{
-    text-align: left;
-    transition: all 8s;
-    align-self: left;
-
+    scroll-margin-left: 100%; 
+    text-align: center;
+    justify-content: left;
+    padding: 5%;
+    
+   
 }
+
+
 /* 
 .Jumbo{
     width: 75%;
@@ -43,9 +47,9 @@
     background-color: #f1f1f1;
     padding: 20px;
   } */
-
-/* .main {
-    flex: 70%;
-    background-color: white;
-    padding: 20px;
-} */
+.h2{
+    margin-top: 150px;
+}
+.main {
+    background-color:blue;
+}
