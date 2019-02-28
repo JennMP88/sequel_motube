@@ -1,5 +1,6 @@
-import React from 'react'
-import './header.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './header.css';
 
 
 const Navbar = props => {
@@ -13,17 +14,16 @@ const Navbar = props => {
             <img width='20' src={require('../assets/image.jpeg')} />
 
             <div class="Pursuit">
-            <ol> <a>Pursuit Tube</a> </ol>
+              <ol> <a>Pursuit Tube</a> </ol>
             </div>
 
-            <div class="navbar">
-            <ol> <a href="/Home/default.asp" target="">Home</a> </ol>
+            <div class="navbar ">
+              <Link to='/'>Home</Link>
 
-            <ol><a href="/User/default.asp" target="">User</a></ol>
+              <Link to='/user'>User</Link>
 
-            <ol><a href="//default.asp" target= "''">Feed Editor</a></ol>
+              <Link to='/feededitor'>Feed Editor</Link>
             </div>
-
             <input class="box" type="search" id="search" placeholder="Search" />
 
             <button className='searchButton' type='text' placeholder='Search ...' >Search</button>
