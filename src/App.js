@@ -7,8 +7,7 @@ import Home from './components/home';
 import User from './components/user';
 import FeedEditor from './components/feededitor';
 import Video from './components/video';
-
-
+// IMPORT {ROUTER, BROWSERHISTORY, INDEXROUTE} from 'react-router'; 
 
 class App extends Component {
   constructor(props){
@@ -27,7 +26,8 @@ class App extends Component {
           <Route path='/' exact component={Home} />
           <Route path='/user' component={User} />
           <Route path='/feededitor' component={FeedEditor} />
-          <Route path='/video' component={Video}/>
+          <Route path='/video' component={Video} />
+
         </>
       </HashRouter>
 

@@ -5,12 +5,16 @@ class Video extends React.Component {
         super()
     }
 
-    render(){
-   return()
+    render() {
+        return (
+            <div class="container">
+             Content here
+          </div>
+        )
     }
 }
 
 
 
 
-export default VideoPlayer;
+export default Video;
