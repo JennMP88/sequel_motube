@@ -9,7 +9,8 @@ class User extends React.Component {
         this.state = {
             users: ['ivy', 'steve', 'jen', 'serge'],
             input: '',
-
+            // bgColor: 'white'
+            currentUser: ''
         }
     }
 
@@ -32,6 +33,25 @@ class User extends React.Component {
     //         console.log('using data from local storage')
     //     }
     // } 
+
+
+    clickingUser = (e, index) => {
+        // console.dir(e.target)
+        console.log(e.target.innerHTML)
+        const currentUser = this.state.users[index]
+
+        this.setState({
+            currentUser,
+        })
+        // if(this.state.user==e.target.innerHTML){
+        //    style{{color:"blue"}}
+        // }
+        //if not selected add to the current
+        // this.setState({user:e.target.innerHTML, bgColor:'blue'})  
+
+         
+
+    }
 
     onNameChange = (e) => {
         console.log(e.target.value)
@@ -72,7 +92,9 @@ class User extends React.Component {
                         <ul className="list-group">
                             {
                                 this.state.users.map((name, i) => {
-                                    return <li key={i} className="list-group-item">{name} </li>;
+                                    let activeClass = "";
+                                    if (name === this.state.currentUser) activeClass = "active"
+                                    return <li key={i} className={"list-group-item " + activeClass} onClick={(e) => this.clickingUser(e, i)} style={{backgroundColor:this.state.bgColor}}>{name} </li>;
                                 })
                             }
 
