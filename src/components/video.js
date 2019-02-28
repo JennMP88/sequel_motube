@@ -1,64 +1,29 @@
 import React from 'react';
+import './video.css';
 
-// class Video extends React.Component {
-//     constructor() {
-//         super()
-//     }
-// }
-//      const VideoPlayer = ({ id }) => {
-//       const link = `https://www.youtube.com/embed/${id}?autoplay=1&fs=1&origin=http://localhost:3000`;
-           
-//        return (
-//         <iframe title='yt-video' type="text/html" width="640" height="360">
-//       src={link} frameBorder="0"></iframe>
-//       );
-
-      
-//     }
 class Video extends React.Component {
-    
-constructor(props) {
-    super(props);
-    this.state ={
-      file:null
-    }
+        constructor(props){
+          super(props);
+          this.state = {
+            
+          }
+ }
 
+render(){
+    return(
+              <>
+         <div class="main" >
+           <div class="row" >
+            <h2>Espn First Take</h2>
 
-    this.onFormSubmit = this.onFormSubmit.bind(this)
-    this.onChange = this.onChange.bind(this)
-    this.fileUpload = this.fileUpload.bind(this)
+            
+            <div class="col-sm" >
+            </div>
+         </div>
+    </div>
+           </>
+    );
   }
-  onFormSubmit(e){
-    e.preventDefault() // Stop form submit
-    this.fileUpload(this.state.file).then((response)=>{
-      console.log(response.data);
-    })
-  }
-  onChange(e) {
-    this.setState({file:e.target.files[0]})
-  }
-  fileUpload(file){
-    const url = 'http://example.com/file-upload';
-    const formData = new FormData();
-    formData.append('file',file)
-    const config = {
-        headers: {
-            'content-type': 'multipart/form-data'
-        }
-    }
-    // return  post(url, formData,config)
-  }
-
-  render() {
-    return (
-      <form onSubmit={this.onFormSubmit}>
-        <h1>File Upload</h1>
-        <input type="file" onChange={this.onChange} />
-        <button type="submit">Upload</button>
-      </form>
-   )
-  }
-};
-
+}
 
 export default Video;
