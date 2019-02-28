@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
 
-
+// SHOULD WE BE EXPORTING NAV?
+// WHY NOT EXPORT HEADER?
+// DON'T WE NEED A CLASS EXTENDS FOR HEADER?
 const Navbar = props => {
   return (
     <>

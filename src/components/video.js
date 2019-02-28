@@ -1,18 +1,16 @@
 import React from 'react';
 
-class Video extends React.Component{
-    constructor () {
+class Video extends React.Component {
+    constructor() {
         super()
+    }
+
+    render(){
+   
     }
 }
 
-const VideoPlayer = ({ id }) =>{
- const link = `https://www.youtube.com/${id}?autoplay=1&fs=1&origin=http://localhost:3000`
 
- return(
-     <iframe title='yt-video' type="text/html" width="640" height="360">
-    src=[link] frameBorder="0"></iframe>
-   );
- }
- 
- export default VideoPlayer;
+
+
+export default VideoPlayer;
