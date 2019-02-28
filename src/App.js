@@ -6,6 +6,7 @@ import { HashRouter, Route, Link } from 'react-router-dom'
 import Home from './components/home';
 import User from './components/user';
 import FeedEditor from './components/feededitor';
+import video from './components/video';
 
 
 
@@ -26,7 +27,7 @@ class App extends Component {
           <Route path='/' exact component={Home} />
           <Route path='/user' component={User} />
           <Route path='/feededitor' component={FeedEditor} />
-          <Route path='video' component={Vide}
+          <Route path='/video' component={Vide}/>
         </>
       </HashRouter>
 
