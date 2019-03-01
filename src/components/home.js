@@ -21,11 +21,11 @@ class Home extends React.Component {
 
                                     {/* <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Espn First Take</button> */}
 
+                
+                   <h2>FeedList</h2>
 
-                <div class="main">
+                 <span className="main">
 
-                    <h2 className="" >FeedList</h2>
-                    
                     <ul class="nav flex-column">
 
                         <li class="nav-item">
@@ -41,6 +41,8 @@ class Home extends React.Component {
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Clear History</a>
                         </li>
                     </ul>
+                 </span>
+
 
                     <div class="text-center">
 
@@ -52,8 +54,6 @@ class Home extends React.Component {
                         </div>
 
                     </div>
-
-                </div>
 
 
             </>
