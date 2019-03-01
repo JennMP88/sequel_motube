@@ -9,6 +9,10 @@
     margin: auto;
     margin-top: 15px;
 }
+.title{
+
+    
+}
 
 .container-fluid{
     width: 100%;
@@ -24,4 +28,8 @@
     flex: 70%;
     background-color: white;
     padding: 20px;
+}
+.fl{
+    justify-content: left ;
+    padding-left: 40px
 }

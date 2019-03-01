@@ -6,6 +6,7 @@ import { HashRouter, Route, Link } from 'react-router-dom'
 import Home from './components/home';
 import User from './components/user';
 import FeedEditor from './components/feededitor';
+// import Video from './components/video'
 
 
 
