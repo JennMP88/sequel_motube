@@ -1,5 +1,6 @@
 import React from 'react';
-import Video from './video'
+import Video from './video';
+import axios from 'axios'; 
 import './home.css'
 
 
@@ -9,79 +10,55 @@ class Home extends React.Component {
         this.state = {
             feedlist: [
                 {
-
+                    query: 'Ivy is a star',
                     videos: [
                         {
                             title: 'johny',
-                            thumbnail: [],
-                            channel: [],
+                            thumbnail: '',
+                            channel: '',
                             posted: '',
+                            id: '',
     
                         },
-    
-                        {
-                            title: 'lilo',
-                            thumbnail: [],
-                            channel: [],
-                            posted: '',
-    
-                        },
-                        {
-                            title: 'stitch',
-                            thumbnail: [],
-                            channel: [],
-                            posted: '',
-    
-                        },
-                        {
-                            title: 'joe',
-                            thumbnail: [],
-                            channel: [],
-                            posted: '',
-    
-                        }
                     ]
                 },
-                {
-
-                videos: [
-                    {
-                        title: 'micheal',
-                        thumbnail: [],
-                        channel: [],
-                        posted: '',
-
-                    },
-
-                    {
-                        title: 'drake',
-                        thumbnail: [],
-                        channel: [],
-                        posted: '',
-
-                    },
-                    {
-                        title: 'serge',
-                        thumbnail: [],
-                        channel: [],
-                        posted: '',
-
-                    },
-                    {
-                        title: 'jenn',
-                        thumbnail: [],
-                        channel: [],
-                        posted: '',
-
-                    }
-                ]
-            }
             ]
 
 
         }
     }
 
+    getVideos = (query) => {
+        axios({
+            method: 'get',
+            url: 'https://www.googleapis.com/youtube/v3/search',
+            params: {
+              part: 'snippet',
+              maxResults: 8,
+              videoDefinition: 'high',
+              type: 'video',
+              videoEmbeddable: 'true',
+              key: 'AIzaSyBe5mlFvs3Zs8cVdXwSKqQg4XDKzBu3J7I',
+              q: query,
+              pageToken: ''
+            }
+          })
+          .then(res=>res.data)
+          .then((data)=>{
+            let feedCopy = [...this.state.feedlist]
+            feedCopy[0].videos[0].title = data.items[0].snippet.title
+            feedCopy[0].videos[0].thumbnail = data.items[0].snippet.thumbnails.medium.url
+            feedCopy[0].videos[0].channel = data.items[0].snippet.channelTitle
+            feedCopy[0].videos[0].posted = data.items[0].snippet.publishedAt
+            feedCopy[0].videos[0].id = data.items[0].id.videoId
+            this.setState({feedlist: feedCopy})
+          })
+    }
+
+    componentDidMount(){
+        let query = this.state.feedlist[0].query
+        this.getVideos(query)
+    }
 
     render() {
         return (
@@ -113,7 +90,7 @@ class Home extends React.Component {
 
                                     {
                                         feed.videos.map((video) => {
-                                            return <Video title = {video.title}/>
+                                            return <Video video = {video}/>
                                         } )
                                     }
 
