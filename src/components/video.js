@@ -9,13 +9,17 @@ const VideoPlayer = (props) => {
   
   <div className='col-3'>
         <div>
+
           <iframe title='yt-video' type="text/html" width="200" height="120"
           src={link} frameBorder="0"></iframe>
         </div>
+
+    <span>
         <img src={thumbnail} alt=''></img>
         {title}
         {channel}
         {posted}
+        </span>
       </div>
     
   
