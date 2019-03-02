@@ -22,6 +22,7 @@ const VideoPlayer = (props) => {
         </span>
       </div>
     
+    
   
 
   );

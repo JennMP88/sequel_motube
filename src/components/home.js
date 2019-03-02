@@ -18,8 +18,8 @@ class Home extends React.Component {
                             channel: '',
                             posted: '',
                             id: '',
-                         },
-                         {
+                        },
+                        {
                             title: 'lilo',
                             thumbnail: [],
                             channel: [],
@@ -34,7 +34,7 @@ class Home extends React.Component {
                             posted: '',
                             id: ''
                         },
-                    
+
                     ]
                 },
             ]
@@ -86,52 +86,37 @@ class Home extends React.Component {
                             <h1 class="display-4">User's Playlist </h1>
                         </div>
                     </div>
-                    
+
 
                     <div class="container">
-                
+
                         <div class="row">
-                        
+
                             <div class="col-4">
-                                
-                                    <h2>Feed list</h2>
-                                    < span className="Container">
-                                    <ul class="nav flex-column">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-  </li>
-</ul>
 
-</span>
+                                <h2>Feed list</h2>
 
-
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action">ESPN First Take</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Drake</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Coldfusion</a>
+                                </div>
                             </div>
 
+
                             <div class="col-8">
+                                <div class="column">
 
-                            <div class="column">
+                                    <div className='title' class="main">
 
-                                <div className='title' class="main">
-
-                                    <h2> User's Playlist feed</h2>
+                                        <h2> Espn First Take</h2>
                                     </div>
                                 </div>
-
 
                                 <div className='fl' class="side">
                                     {
                                         this.state.feedlist.map((feed, i) => {
                                             return <div className='row' >
-
 
                                                 {
                                                     feed.videos.map((video) => {
@@ -143,21 +128,11 @@ class Home extends React.Component {
                                         })
                                     }
 
-
-
-
-
-
-
                                 </div>
-
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-
 
 
             </>
