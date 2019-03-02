@@ -10,7 +10,7 @@ class Home extends React.Component {
         this.state = {
             feedlist: [
                 {
-                    query: 'New ish',
+                    query: 'ESPN FIRST TAKE',
                     videos: [
                         {
                             title: 'johny',
@@ -19,22 +19,9 @@ class Home extends React.Component {
                             posted: '',
                             id: '',
                         },
-                        {
-                            title: 'lilo',
-                            thumbnail: [],
-                            channel: [],
-                            posted: '',
-                            id: ' '
-                        },
-
-                        {
-                            title: 'stitch',
-                            thumbnail: [],
-                            channel: [],
-                            posted: '',
-                            id: ''
-                        },
-
+                        
+                       
+   
                     ]
                 },
             ]
@@ -82,38 +69,38 @@ class Home extends React.Component {
 
                 <div className='Container' >
                     <div className='Jumbo'>
-                        <div class="jumbotron jumbotron-fluid">
-                            <h1 class="display-4">User's Playlist </h1>
+                        <div className="jumbotron jumbotron-fluid">
+                            <h1 className="display-4">User's Playlist </h1>
                         </div>
                     </div>
 
 
-                    <div class="container">
+                    <div className="container">
 
-                        <div class="row">
+                        <div className="row feed">
 
-                            <div class="col-4">
+                            <div className="col-2">
 
                                 <h2>Feed list</h2>
 
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item list-group-item-action">ESPN First Take</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Drake</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Coldfusion</a>
+                                <div className="list-group">
+                                    <a href="#" className="list-group-item list-group-item-action">ESPN First Take</a>
+                                    <a href="#" className="list-group-item list-group-item-action">Drake</a>
+                                    <a href="#" className="list-group-item list-group-item-action">Coldfusion</a>
                                 </div>
                             </div>
 
+                          <div>
+                            <div className="col-10">
+                                <div className="column">
 
-                            <div class="col-8">
-                                <div class="column">
-
-                                    <div className='title' class="main">
+                                    <div className='title' className="main">
 
                                         <h2> Espn First Take</h2>
                                     </div>
                                 </div>
 
-                                <div className='fl' class="side">
+                                <div className='fl' className="side">
                                     {
                                         this.state.feedlist.map((feed, i) => {
                                             return <div className='row' >
@@ -130,10 +117,69 @@ class Home extends React.Component {
 
                                 </div>
                             </div>
+
+                            <div className="col-10">
+                            <div className="row">
+                                <div className="column">
+
+                                    <div className='title' className="main">
+
+                                        <h3> Drake</h3>
+                                    </div>
+                                </div>
+
+                                <div className='fl' className="side">
+                                    {
+                                        this.state.feedlist.map((feed, i) => {
+                                            return <div className='row' >
+
+                                                {
+                                                    feed.videos.map((video) => {
+                                                        return <Video video={video} />
+                                                    })
+                                                }
+
+                                            </div>
+                                        })
+                                    }
+
+                                </div>
+                            </div>
+                            </div>
+
+
+                            <div className="col-10">
+                                <div className="column">
+                                <div className="row">
+                                    <div className='title' className="main">
+
+                                        <h4>Coldfusion</h4>
+                                    </div>
+                                 </div>
+
+                                <div className='fl' className="side">
+                                    {
+                                        this.state.feedlist.map((feed, i) => {
+                                            return <div className='row' >
+
+                                                {
+                                                    feed.videos.map((video) => {
+                                                        return <Video video={video} />
+                                                    })
+                                                }
+
+                                            </div>
+                                        })
+                                    }
+
+                                </div>
+                            </div>
+                          </div>
+
                         </div>
                     </div>
+                 </div>
                 </div>
-
 
             </>
         )

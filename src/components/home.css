@@ -30,3 +30,8 @@
     padding-left: 40px
 }
 
+.col-8 {
+    width: 75px;
+    position: relative;
+    overflow: hidden;
+}
