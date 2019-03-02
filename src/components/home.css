@@ -1,5 +1,6 @@
 .side{ 
     background: #eee;
+    padding: 10px;
 
 }
 
@@ -10,28 +11,13 @@
     margin-top: 15px;
 }
 
-.container-fluid{
-    width: 100%;
-}
-
-/* .side {
-    flex: 30%;
-    background-color: #f1f1f1;
-    padding: 20px;
-  } */
-
 .main {
     flex: 70%;
     background-color: white;
     padding: 20px;
 }
-.fl{
-    justify-content: left ;
-    padding-left: 40px
-}
 
-.col-8 {
-    width: 75px;
-    position: relative;
-    overflow: hidden;
+.feedList {
+    /* float: right; */
+    width: 80%;
 }

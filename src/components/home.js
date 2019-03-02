@@ -81,7 +81,7 @@ class Home extends React.Component {
 
                             <div className="col-2">
 
-                                <h2>Feed list</h2>
+                                <h1>Feed list</h1>
 
                                 <div className="list-group">
                                     <a href="#" className="list-group-item list-group-item-action">ESPN First Take</a>
@@ -90,10 +90,9 @@ class Home extends React.Component {
                                 </div>
                             </div>
 
-                          <div>
-                            <div className="col-10">
-                                <div className="column">
-
+                          <div className="feedList">
+                            <div className="col-10"> 
+                            
                                     <div className='title' className="main">
 
                                         <h2> Espn First Take</h2>
@@ -114,14 +113,12 @@ class Home extends React.Component {
                                             </div>
                                         })
                                     }
-
+                                <button type="button" class="btn btn-outline-dark">Show more</button>
                                 </div>
-                            </div>
+                     
 
                             <div className="col-10">
-                            <div className="row">
-                                <div className="column">
-
+                           
                                     <div className='title' className="main">
 
                                         <h3> Drake</h3>
@@ -142,15 +139,14 @@ class Home extends React.Component {
                                             </div>
                                         })
                                     }
-
+                             <button type="button" class="btn btn-outline-dark">Show more</button>
                                 </div>
-                            </div>
-                            </div>
+                           </div>
 
 
                             <div className="col-10">
-                                <div className="column">
-                                <div className="row">
+                                
+                                
                                     <div className='title' className="main">
 
                                         <h4>Coldfusion</h4>
@@ -171,15 +167,14 @@ class Home extends React.Component {
                                             </div>
                                         })
                                     }
-
+                            <button type="button" class="btn btn-outline-dark">Show more</button>
                                 </div>
+                                
                             </div>
-                          </div>
-
                         </div>
                     </div>
-                 </div>
-                </div>
+              
+         
 
             </>
         )
