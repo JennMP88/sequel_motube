@@ -80,32 +80,49 @@ class Home extends React.Component {
         return (
             <>
 
-                <div className='row' >
+                <div className='Container' >
                     <div className='Jumbo'>
                         <div class="jumbotron jumbotron-fluid">
-                            <h1 class="display-4">User Playlist</h1>
+                            <h1 class="display-4">User's Playlist </h1>
                         </div>
                     </div>
+                    
 
                     <div class="container">
+                
                         <div class="row">
+                        
                             <div class="col-4">
-                                <div className='fl' class="side">
-                               
+                                
                                     <h2>Feed list</h2>
+                                    < span className="Container">
+                                    <ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
 
-                                    <span class="column"></span>
-
-
-                                </div>
+</span>
 
 
                             </div>
+
                             <div class="col-8">
 
                             <div class="column">
+
                                 <div className='title' class="main">
-                                    <h2>TITLE HEADING</h2>
+
+                                    <h2> User's Playlist feed</h2>
                                     </div>
                                 </div>
 
