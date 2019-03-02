@@ -10,7 +10,7 @@ class Home extends React.Component {
         this.state = {
             feedlist: [
                 {
-                    query: 'Ivy is a star',
+                    query: 'New ish',
                     videos: [
                         {
                             title: 'johny',
@@ -38,7 +38,7 @@ class Home extends React.Component {
               videoDefinition: 'high',
               type: 'video',
               videoEmbeddable: 'true',
-              key: 'AIzaSyBe5mlFvs3Zs8cVdXwSKqQg4XDKzBu3J7I',
+              key: 'AIzaSyBqsTC2uJ5zklkPcEDeLpAz4B6UktMYuPo',
               q: query,
               pageToken: ''
             }
