@@ -1,7 +1,7 @@
 import React from 'react';
 import Video from './video';
 import axios from 'axios'; 
-import './home.css'
+import './home.css' 
 
 
 class Home extends React.Component {
