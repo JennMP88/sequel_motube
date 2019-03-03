@@ -1,5 +1,5 @@
 import React from 'react';
-import Video from './video';
+import VideoPlayer from './video';
 import axios from 'axios'; 
 import './home.css' 
 
@@ -10,10 +10,10 @@ class Home extends React.Component {
         this.state = {
             feedlist: [
                 {
-                    query: 'Ivy is a star',
+                    query: 'Bethel',
                     videos: [
                         {
-                            title: 'johny',
+                            title: '',
                             thumbnail: '',
                             channel: '',
                             posted: '',
@@ -38,13 +38,14 @@ class Home extends React.Component {
               videoDefinition: 'high',
               type: 'video',
               videoEmbeddable: 'true',
-              key: 'AIzaSyBe5mlFvs3Zs8cVdXwSKqQg4XDKzBu3J7I',
+              key: 'AIzaSyAL6JKGb4TLsmM4MKvk0f85Bu4QpaJvgEs',
               q: query,
               pageToken: ''
             }
           })
           .then(res=>res.data)
           .then((data)=>{
+              console.log(data.items)
             let feedCopy = [...this.state.feedlist]
             feedCopy[0].videos[0].title = data.items[0].snippet.title
             feedCopy[0].videos[0].thumbnail = data.items[0].snippet.thumbnails.medium.url
@@ -57,7 +58,7 @@ class Home extends React.Component {
 
     componentDidMount(){
         let query = this.state.feedlist[0].query
-        this.getVideos(query)
+        this.getVideos(this.state.feedlist[0].query)
     }
 
     render() {
@@ -80,7 +81,7 @@ class Home extends React.Component {
                             </div>
                             <div class="col-8">
                                 <div className='title' class="main">
-                                    <h2>TITLE HEADING</h2>
+                                    <h2>TITLE HEADING</h2>    {/* PUT TITLE IN MAP  */}
                                 </div>
                                 <div className='fl' class="side">
                                 {
@@ -90,7 +91,7 @@ class Home extends React.Component {
 
                                     {
                                         feed.videos.map((video) => {
-                                            return <Video video = {video}/>
+                                            return <VideoPlayer video = {video}/>
                                         } )
                                     }
 

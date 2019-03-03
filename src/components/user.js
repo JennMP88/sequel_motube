@@ -7,9 +7,8 @@ class User extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            users: ['ivy', 'steve', 'jen', 'serge'],
+            users: [],
             input: '',
-            // bgColor: 'white'
             currentUser: ''
         }
     }
@@ -48,9 +47,7 @@ class User extends React.Component {
         // }
         //if not selected add to the current
         // this.setState({user:e.target.innerHTML, bgColor:'blue'})  
-
-         
-
+        
     }
 
     onNameChange = (e) => {
@@ -85,10 +82,12 @@ class User extends React.Component {
             <>
                 <div className='row'>
                     <div className='col-6'>
+                    <div><h3>Create a New User</h3></div>
                         <input type='text' placeholder='name' onChange={this.onNameChange} /><button onClick={this.addNewUser}>add</button>
 
                     </div>
                     <div className='col-6'>
+                    <div><h3>User list</h3></div>
                         <ul className="list-group">
                             {
                                 this.state.users.map((name, i) => {
