@@ -1,35 +1,22 @@
 .side{ 
     background: #eee;
-
+    padding: 10px;
 }
-
 .Jumbo{
     width: 75%;
-   background-color: grey;
+    background-color: grey;
     margin: auto;
     margin-top: 15px;
 }
-.title{
-
-    
-}
-
-.container-fluid{
-    width: 100%;
-}
-
-/* .side {
-    flex: 30%;
-    background-color: #f1f1f1;
-    padding: 20px;
-  } */
-
 .main {
     flex: 70%;
     background-color: white;
     padding: 20px;
 }
-.fl{
-    justify-content: left ;
-    padding-left: 40px
+.feedList {
+    /* float: right; */
+    width: 80%;
+}
+.container{
+    margin-buttom: 100% ;
 }
